@@ -1,23 +1,15 @@
-use axum::{
-    Router,
-    routing::get,
-};
-
 mod errors;
-mod models;
 mod handlers;
+mod models;
+mod routes;
 
-use handlers::{hello_world, health_check, get_users, get_user_by_id};
+use routes::create_routes;
 
 #[tokio::main]
 async fn main() {
     println!("Starting Rust API server...");
 
-    let app = Router::new()
-        .route("/", get(hello_world))
-        .route("/health", get(health_check))
-        .route("/api/users", get(get_users))
-        .route("/api/users/{id}", get(get_user_by_id));
+    let app = create_routes();
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
 
