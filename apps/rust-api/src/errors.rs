@@ -5,6 +5,7 @@ use axum::{
 use thiserror::Error;
 use validator::ValidationErrors;
 
+#[allow(dead_code)]
 #[derive(Error, Debug)]
 pub enum ApiError {
     #[error("Not found: {0}")]
