@@ -1,0 +1,297 @@
+# ===========================
+# GENERAL
+# ===========================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================
+# RUST (apps/rust-api)
+# ===========================
+
+# Compiled files
+apps/rust-api/target/
+apps/rust-api/Cargo.lock
+*.pdb
+
+# Rust-specific
+apps/rust-api/**/*.rs.bk
+apps/rust-api/.cargo/
+
+# ===========================
+# NODE.JS / TYPESCRIPT (apps/web)
+# ===========================
+
+# Dependencies
+apps/web/node_modules/
+apps/web/.pnp
+apps/web/.pnp.js
+
+# Production builds
+apps/web/build/
+apps/web/dist/
+apps/web/.next/
+apps/web/out/
+
+# Runtime data
+apps/web/pids
+apps/web/*.pid
+apps/web/*.seed
+apps/web/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+apps/web/coverage/
+apps/web/.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# ===========================
+# PYTHON (apps/python-ai)
+# ===========================
+
+# Byte-compiled / optimized / DLL files
+apps/python-ai/__pycache__/
+apps/python-ai/*.py[cod]
+apps/python-ai/*$py.class
+
+# C extensions
+apps/python-ai/*.so
+
+# Distribution / packaging
+apps/python-ai/.Python
+apps/python-ai/build/
+apps/python-ai/develop-eggs/
+apps/python-ai/dist/
+apps/python-ai/downloads/
+apps/python-ai/eggs/
+apps/python-ai/.eggs/
+apps/python-ai/lib/
+apps/python-ai/lib64/
+apps/python-ai/parts/
+apps/python-ai/sdist/
+apps/python-ai/var/
+apps/python-ai/wheels/
+apps/python-ai/share/python-wheels/
+apps/python-ai/*.egg-info/
+apps/python-ai/.installed.cfg
+apps/python-ai/*.egg
+apps/python-ai/MANIFEST
+
+# PyInstaller
+apps/python-ai/*.manifest
+apps/python-ai/*.spec
+
+# Installer logs
+apps/python-ai/pip-log.txt
+apps/python-ai/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+apps/python-ai/htmlcov/
+apps/python-ai/.tox/
+apps/python-ai/.nox/
+apps/python-ai/.coverage
+apps/python-ai/.coverage.*
+apps/python-ai/.cache
+apps/python-ai/nosetests.xml
+apps/python-ai/coverage.xml
+apps/python-ai/*.cover
+apps/python-ai/*.py,cover
+apps/python-ai/.hypothesis/
+apps/python-ai/.pytest_cache/
+apps/python-ai/cover/
+
+# Virtual environments
+apps/python-ai/venv/
+apps/python-ai/env/
+apps/python-ai/ENV/
+apps/python-ai/env.bak/
+apps/python-ai/venv.bak/
+
+# Spyder project settings
+apps/python-ai/.spyderproject
+apps/python-ai/.spyproject
+
+# Rope project settings
+apps/python-ai/.ropeproject
+
+# mkdocs documentation
+apps/python-ai/site/
+
+# mypy
+apps/python-ai/.mypy_cache/
+apps/python-ai/.dmypy.json
+apps/python-ai/dmypy.json
+
+# Pyre type checker
+apps/python-ai/.pyre/
+
+# pytype static type analyzer
+apps/python-ai/.pytype/
+
+# Cython debug symbols
+apps/python-ai/cython_debug/
+
+# ===========================
+# DOCKER & INFRASTRUCTURE
+# ===========================
+
+# Docker
+.dockerignore
+
+# Terraform
+infrastructure/*.tfstate
+infrastructure/*.tfstate.*
+infrastructure/.terraform/
+infrastructure/.terraform.lock.hcl
+
+# Kubernetes secrets
+infrastructure/k8s/secrets/
+
+# ===========================
+# DATABASE
+# ===========================
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# PostgreSQL
+postgres_data/
+
+# ===========================
+# MONITORING & LOGS
+# ===========================
+
+# Prometheus data
+prometheus_data/
+
+# Grafana data
+grafana_data/
+
+# Application logs
+*.log
+logs/
+
+# ===========================
+# TEMPORARY & BUILD FILES
+# ===========================
+
+# Build artifacts
+build/
+dist/
+*.tar.gz
+*.zip
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# ===========================
+# SECRETS & CREDENTIALS
+# ===========================
+
+# API keys and secrets
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# AWS credentials
+.aws/
+
+# Google Cloud credentials
+gcloud-service-key.json
+
+# ===========================
+# MONOREPO SPECIFIC
+# ===========================
+
+# Package managers
+.yarn/
+.pnpm-store/
+
+# Lerna
+lerna-debug.log
+
+# Rush
+common/temp/
