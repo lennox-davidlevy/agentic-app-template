@@ -6,6 +6,8 @@ mod routes;
 
 use handlers::users::create_initial_state;
 use routes::create_routes;
+// #[allow(unused_imports)]
+// use database::{initialize_database, test_database_connection };
 
 #[tokio::main]
 async fn main() {
